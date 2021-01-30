@@ -1,0 +1,17 @@
+<div class="toolbar">
+    <p>
+        <mat-toolbar>
+        <a routerLink="/home"><img class="logo" src="assets/images/logo_transparent.png" alt="logo"></a>
+        <span class="spacer"></span>
+        <div class="topnav">
+            <a RouterLink="/">Home</a>
+            <a RouterLink="/">Service</a>
+            <a RouterLink="/">Contact Us</a>
+            <span *ngIf="!LoggedIn"><a RouterLink="/">Login</a><a RouterLink="/">Signin</a></span>
+            <span *ngIf="LoggedIn"><a>Hello {{CurrentUser}}</a></span>
+        </div>
+      </mat-toolbar>
+      </p>
+
+</div>
+
